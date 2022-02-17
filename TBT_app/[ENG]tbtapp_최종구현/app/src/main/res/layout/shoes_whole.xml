@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/frame_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkBox_SIze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Size" />
+
+        <CheckBox
+            android:id="@+id/checkBox_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/frame_B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame_A"/>
+    <ImageButton
+        android:id="@+id/filter"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_youtube_searched_for_black_24dp"
+        android:scaleType="fitCenter"
+        android:layout_alignBottom="@+id/frame_B"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/frame_A"/>
+
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/frame_B"
+        android:columnWidth="120dp"
+        android:gravity="center"
+        android:numColumns="auto_fit" />
+</RelativeLayout>

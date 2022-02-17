@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/screen_statefoot"
+        android:icon="@drawable/ic_camera_alt_black_24dp"
+        android:title="statefoot" />
+    <item
+        android:id="@+id/screen_shoesgods"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="shoesgoods" />
+    <item
+        android:id="@+id/screen_stretching"
+        android:icon="@drawable/ic_fitness_center_black_24dp"
+        android:title="stretching" />
+    <item
+        android:id="@+id/screen_mymenu"
+        android:icon="@drawable/ic_border_color_black_24dp"
+        android:title="mymenu" />
+</menu>

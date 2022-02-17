@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/la"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tumain"
+    tools:context=".tutorial">
+
+    <ImageButton
+        android:id="@+id/tuEndBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ffffff"
+        android:onClick="endClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/xbutton" />
+
+    <View
+        android:id="@+id/tuView0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/tuView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/tuView1"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tuText4"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/tuText2"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tuText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <TextView
+        android:id="@+id/tuText3"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tuView0" />
+
+    <TextView
+        android:id="@+id/tuText"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tuView0" />
+
+    <View
+        android:id="@+id/tuView2"
+        android:layout_width="66dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tuView0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tuView0"
+        app:layout_constraintVertical_bias="0.224" />
+
+    <View
+        android:id="@+id/nearView"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tuView0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="@+id/tuView0"
+        app:layout_constraintTop_toTopOf="@+id/tuView0"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <View
+        android:id="@+id/tuView3"
+        android:layout_width="303dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tuView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tuView0"
+        app:layout_constraintVertical_bias="0.867" />
+
+    <View
+        android:id="@+id/tuView4"
+        android:layout_width="303dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tuView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tuView0"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <View
+        android:id="@+id/tuShopView0"
+        android:layout_width="401dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <View
+        android:id="@+id/tuShopView1"
+        android:layout_width="400dp"
+        android:layout_height="309dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
+
+    <View
+        android:id="@+id/tuShopView2"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/tuStView"
+        android:layout_width="401dp"
+        android:layout_height="345dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

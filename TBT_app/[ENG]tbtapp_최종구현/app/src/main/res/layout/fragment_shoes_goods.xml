@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ShoesGoodsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    // 이미지
+    <ImageView
+        android:id="@+id/imgFoot"
+        android:src="@drawable/tbtup"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Shopping"
+        android:textSize="20dp"
+        android:textColor="#365E77"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/collection"
+        android:layout_marginRight="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_favorite_black_24dp" />
+
+
+
+
+    <!-- 신발종류
+     첫 번재 줄-->
+        <ImageButton
+            android:id="@+id/whole"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/runningShoes"
+            app:layout_constraintTop_toBottomOf="@+id/imgFoot"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/icons_all"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/runningShoes"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/whole"
+            app:layout_constraintTop_toTopOf="@+id/whole"
+            app:layout_constraintLeft_toRightOf="@+id/whole"
+            app:layout_constraintRight_toLeftOf="@+id/highHeel"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:srcCompat="@drawable/icons_runingshoes"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/highHeel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/runningShoes"
+            app:layout_constraintTop_toTopOf="@+id/runningShoes"
+            app:layout_constraintLeft_toRightOf="@+id/runningShoes"
+            app:layout_constraintRight_toLeftOf="@+id/loafers"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:srcCompat="@drawable/icons_highheel"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/loafers"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/highHeel"
+            app:layout_constraintTop_toTopOf="@+id/highHeel"
+            app:layout_constraintLeft_toRightOf="@+id/highHeel"
+            app:layout_constraintRight_toLeftOf="@+id/walker"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:srcCompat="@drawable/icons_boots"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/walker"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/loafers"
+            app:layout_constraintTop_toTopOf="@+id/loafers"
+            app:layout_constraintLeft_toRightOf="@+id/loafers"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:srcCompat="@drawable/icons_walker"/>
+
+
+
+        <!-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/whole"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+
+            android:columnWidth="100dp"
+            android:gravity="center"
+            android:numColumns="2"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

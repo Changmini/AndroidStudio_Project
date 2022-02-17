@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imgFoot"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="147dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/imgFoot"
+        android:layout_alignEnd="@+id/imgFoot"
+        android:layout_alignRight="@+id/imgFoot"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:gravity="center"
+        android:text="Foot name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#DF1A1A"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="105dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/txtName"
+        android:layout_alignEnd="@+id/txtName"
+        android:layout_alignRight="@+id/txtName"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/txtS2"
+        android:layout_toRightOf="@+id/txtS2"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#2B2B2B"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtSize"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrice"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/txtS"
+        android:layout_toRightOf="@+id/txtS"
+        android:text="size"
+        android:textColor="#2B2B2B"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrice"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="Size :"
+        android:textColor="#2B2B2B"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtS2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="Price :"
+        android:textColor="#2B2B2B"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtAngle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrice"
+        android:layout_alignEnd="@+id/txtPrice"
+        android:layout_alignRight="@+id/txtPrice"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_toEndOf="@+id/txtAngle2"
+        android:layout_toRightOf="@+id/txtAngle2"
+        android:text="Ang"
+        android:textColor="#2B2B2B"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtAngle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrice"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/txtSize"
+        android:layout_toRightOf="@+id/txtSize"
+        android:gravity="center"
+        android:text="Angle :"
+        android:textColor="#2B2B2B"
+        android:textSize="15dp" />
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation ="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#365E77"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="LOGIN"/>
+
+    // TBT Image
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:src="@drawable/tbtup"/>
+
+    // ID
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/EditText_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="이메일 주소"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    // PW
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/EditTExt_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="비밀번호"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    // Login Button
+    <Button
+        android:id="@+id/Button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_darkblue"
+        android:text="로그인"
+        android:textColor="#ffffff" />
+
+    // Find ID, PW
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:weightSum="1" >
+        <TextView
+            android:id="@+id/Id_PwSearching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="아이디 / 비밀번호 찾기"
+            android:textSize="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Facebook 로그인"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:background="@drawable/btn_darkblue"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="또는"
+        android:textSize="15dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="계정이 없으신가요?  "
+            android:textSize="18dp"
+            android:gravity="right"/>
+        <TextView
+            android:id="@+id/login_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="가입하기"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
