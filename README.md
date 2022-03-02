@@ -5,3 +5,7 @@
 이 증상이 심할 경우, 엄지발가락이 둘째발가락과 엇갈리는 정도까지 돌아가기도 한다.
 특히 앞이 좁고 굽이 높은 신발을 자주 신는 여성에게 잘 발생하는 족부 질환이다.
 
+![noname01](https://user-images.githubusercontent.com/54919484/156362106-d1d7e05d-a4e1-4184-ba48-206dc507c71f.png)
+
+![noname02](https://user-images.githubusercontent.com/54919484/156362119-a82fa4e6-1774-4c2a-9fa4-34ad1e6c14c7.png)
+
