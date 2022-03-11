@@ -10,6 +10,8 @@
 이전 프로젝트v1.0는 기술적/시간적 한게로 C#을 사용하여 프로그램을 개발하였다.
 그러나 프로그램 특성상 카메라 기능이 필수이기 때문에 v2.0은 안드로이드os에서 구동할 수 있는 앱으로 만들어낸 것이다.
 
+메뉴는 다음과 같이 4가지가 존재하고 어플을 통해서 무지외반증 자가진단과 기타 질병 관리에 필요한 데이터를 제공한다.
+
 ![noname01](https://user-images.githubusercontent.com/54919484/156362106-d1d7e05d-a4e1-4184-ba48-206dc507c71f.png)
 
 ![noname02](https://user-images.githubusercontent.com/54919484/156362119-a82fa4e6-1774-4c2a-9fa4-34ad1e6c14c7.png)
